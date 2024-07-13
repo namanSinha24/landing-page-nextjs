@@ -1,0 +1,117 @@
+/* Layout 2 */
+@font-face {
+    font-family: 'Gellix_Light';
+    src: url('/public/fonts/Gellix_Light/Gellix-Light.woff2') format('woff2'),
+        url('/public/fonts/Gellix_Light/Gellix-Light.woff') format('woff');
+    /* Add additional src lines for other formats if necessary */
+}
+
+@font-face {
+    font-family: 'Gellix_Regular';
+    src: url('/public/fonts/Gellix_Regular/Gellix-Regular.woff2') format('woff2'),
+        url('/public/fonts/Gellix_Regular/Gellix-Regular.woff') format('woff');
+    /* Add additional src lines for other formats if necessary */
+}
+
+@font-face {
+    font-family: 'Gellix_Medium';
+    src: url('/public/fonts/Gellix_Medium/Gellix-Medium.woff') format('woff');
+}
+
+
+.layout2_text {
+    margin-bottom: 70px;
+}
+
+.layout2_button {
+    color: #007333;
+    margin-top: 30px;
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    margin-right: 20px;
+}
+
+.noLockIn {
+    font-style: italic;
+    color: white;
+
+}
+
+
+.layout2_container {
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Gellix";
+    background-color: #007333;
+    margin-top: 150px;
+}
+
+.bottom_div {
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+    background-color: #03a172;
+    border-radius: 8rem;
+    height: 50px;
+    transition: 0.5s ease-in-out;
+    margin-top: 30px;
+}
+
+
+
+
+
+.inner_div {
+    font-family: 'gellix', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.55rem;
+
+}
+
+
+
+.layout2_container h1 {
+    font-size: 60px;
+    max-width: 1240px;
+    margin: 0 auto;
+    color: white;
+}
+
+.layout2_container p {
+    font-size: 18px;
+    max-width: 860px;
+    font-family: "Gellix_Regular";
+    color: white;
+    margin-top: 25px;
+}
+
+@media (max-width:770px) {
+    .layout2_container h1 {
+        font-size: 48px;
+    }
+}
+
+@media (max-width:640px) {
+    .layout2_container h1 {
+        font-size: 36px;
+    }
+
+    .layout2_container p {
+        font-size: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .layout2_container {
+        padding: 0 16px;
+        height: auto;
+    }
+}

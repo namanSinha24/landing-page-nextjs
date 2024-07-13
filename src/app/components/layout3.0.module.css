@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Oswald:wght@200..700&display=swap');
+
+.layout3_container {
+    height: 670px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    background-color: #151526;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.layout3_text {
+    display: flex;
+    width: 1280px;
+    height: 520px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.text {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1280px;
+    height: 90px;
+    gap: 23rem;
+}
+
+.layout3_container h1 {
+    font-size: 60px;
+    margin: 0 auto;
+    color: white;
+}
+
+.highlight {
+    color: #00e676;
+}
+
+.layout3_button {
+    color: #007333;
+    font-family: "Oswald", sans-serif;
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.noLockIn {
+    font-style: italic;
+    color: white;
+}
+
+.buttonContainer {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+.testimonials {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.testimonial1 h1 {
+    color: black;
+    font-size: 35px;
+}
+
+.testimonial1 {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 750px;
+    height: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: left;
+}
+
+.profileImage {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 200px;
+}
+
+.companyLogo {
+    width: 100px;
+    height: auto;
+    margin-left: 10px;
+}
+
+.signature {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.signature p {
+    margin: 0;
+}
+
+.arrow {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

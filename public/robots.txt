@@ -1,0 +1,8 @@
+# robots.txt for https://www.consumableai.com/
+
+sitemap: https://www.consumableai.com/sitemap.xml
+
+
+User-agent: *
+Disallow: /contact/*
+Disallow: /consumableseo

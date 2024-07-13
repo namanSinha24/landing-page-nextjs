@@ -1,0 +1,393 @@
+@font-face {
+    font-family: 'Gellix_Medium';
+    src: url("../../../public/fonts/Gellix_Medium/Gellix-Medium.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Gellix';
+    src: url('../../../public/fonts/Gellix-SemiBold.woff2') format('woff2'),
+        url('../../../public/fonts/Gellix-SemiBold.woff') format('woff');
+}
+
+.bottom_div {
+    display: flex;
+    background-color: #c7cdcb;
+    height: 50px;
+    transition: 0.5s ease-in-out;
+    margin-top: 3px;
+}
+
+.btn_link {
+    grid-column-gap: 0.75rem;
+    box-shadow: none;
+    text-align: center;
+    justify-content: center;
+    height: 50px;
+    padding: .75rem 1.5rem;
+    font-size: 12px;
+    transform: translate3d(5px, -5px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    background-color: #f7f7f7;
+    transform-style: preserve-3d;
+    transition: all 0.4s ease;
+    color: #283241;
+
+}
+
+
+
+.btn_link:hover {
+    transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+    background-color: #007333;
+    color: #fcfcfc;
+
+}
+
+.inner_div {
+    font-family: 'gellix', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.55rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Center the content horizontally */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    /* Center the text */
+
+}
+
+.text {
+    display: block;
+    /* Show text by default */
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+
+.header_open_position_fixed {
+    padding: 0 4%;
+    background-color: #ffffff;
+    height: 100px;
+    width: 100%;
+    max-width: 100%;
+    position: fixed;
+    top: 0;
+    padding-top: 20px;
+    z-index: 1000;
+
+
+}
+
+
+.header_closed_position_sticky {
+    position: fixed !important;
+    top: 0;
+    height: 50px;
+    z-index: 1000;
+    background-color: #37427a;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding-top: 10px;
+
+}
+
+.header_inner_div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 55px 0;
+    background-color: #ffffff;
+    height: 90px;
+    padding-left: 13rem;
+    padding-right: 13rem;
+    margin-top: 10px;
+}
+
+.header_inner_div button {
+    color: rgb(255, 255, 255);
+    margin-left: 20px;
+    background-color: #007333;
+    padding: .75rem 1.5rem;
+}
+
+.header_link {
+    cursor: pointer;
+}
+
+
+.btn_div {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-auto-flow: column;
+    z-index: 2;
+    /* Increase the z-index to make the menu bar appear above the overlay */
+}
+
+.logo_div {
+    z-index: 1001;
+
+    /* Increase the z-index to make the menu bar appear above the overlay */
+}
+
+/* .contact_us_btn {
+    background-color: #F7F7F7;
+    color: #283241;
+    height: 48px;
+    border: none;
+    border-radius: 9999px;
+    padding: 1px 24px;
+    font-size: 1.125rem;
+    outline: none;
+    font-family: "Gellix_Medium";
+    text-decoration: none;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    transition: all 0.4s ease;
+    /* box-shadow: -8px 8px 0px #1c1b1b;} */
+
+
+/* 
+.contact_us_btn:hover {
+    background-color: #00C389;
+    color: #FFFFFF;
+
+} */
+
+.social_icons {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-left: 115px;
+
+}
+
+.social_icons a {
+    color: #000000;
+    /* Adjust color as needed */
+    font-size: 1.5rem;
+    /* Adjust size as needed */
+}
+
+.social_icons a:hover {
+    color: #00C389;
+    /* Adjust hover color as needed */
+}
+
+
+.menu_btn_div {
+    display: grid;
+    grid-auto-flow: column;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    width: fit-content;
+    margin: 0 0 0 24px;
+
+    /* Ensure the parent is a positioned container */
+
+}
+
+.menu_icon_div {
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* Ensure the menu icon container is a positioned container */
+    cursor: pointer;
+    transition: 0.3s ease-in;
+    background-color: #00C389;
+}
+
+
+
+.menu_bar {
+    width: 26px;
+    height: 1.5px;
+    background-color: #ffffff;
+    margin: 3px;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 25px;
+}
+
+.menu_btn_text {
+    font-family: "Gellix";
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.overlay ul {
+    list-style: none;
+    font-size: 30px;
+    margin-left: 110px;
+    align-items: flex-start;
+    width: 350px;
+    margin-top: 200px;
+    margin-bottom: 120px;
+}
+
+.overlay_items_list {
+    padding: 8px 0px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    font-family: 'Gellix';
+}
+
+.overflow_hidden_class {
+    overflow: hidden;
+}
+
+.overlay_items_list::before {
+    content: "";
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #00C389;
+    /* You can customize the dot color */
+    left: 10px;
+    top: 30px;
+    /* Adjust the initial position of the dot */
+    opacity: 1;
+
+    transform: translateX(-5px);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+
+.overlay_items_list:hover {
+    transform: translateX(20px) !important;
+    /* Move the li to the right on hover */
+}
+
+.overlay_items_list:hover::before {
+    opacity: 1;
+    transform: translateX(-30px);
+    /* Move the dot to the left on hover */
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #C8F0E1;
+    opacity: 1;
+    /* Adjust the opacity as desired */
+    z-index: 1;
+
+    /* Ensure the overlay is below the menu bar */
+    transition: opacity 0.3s ease-in-out;
+    /* Add a smooth transition effect */
+    pointer-events: auto;
+    /* Allow interactions with overlay */
+    display: flex;
+    align-items: center;
+    padding: 25% 6.9%;
+
+}
+
+@media(max-width:1667px) {
+
+    .overlay ul {
+        margin-left: 1px;
+    }
+
+    .social_icons {
+        display: none;
+    }
+}
+
+@media (max-width:780px) {
+    .header_inner_div {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .bottom_div {
+        display: none;
+    }
+
+
+
+
+    .btn_link {
+        height: 45px;
+    }
+
+    /* .empty-header-div {
+      display: none;
+    } */
+
+
+
+    .menu_btn_div h3 {
+        display: none;
+    }
+}
+
+/* Layout 2 */
+.layout2_container {
+    height: 369.6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.layout2_container h1 {
+    font-size: 60px;
+    max-width: 665px;
+    margin: 0 auto;
+}
+
+.layout2_container p {
+    font-size: 20px;
+    max-width: 450px;
+    font-family: "Gellix_Regular";
+    margin: 24px auto 0;
+}
+
+@media (max-width:600px) {
+    .layout2_container h1 {
+        font-size: 48px;
+    }
+}
+
+@media (max-width:600px) {
+    .layout2_container h1 {
+        font-size: 36px;
+    }
+
+    .layout2_container p {
+        font-size: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .layout2_container {
+        padding: 0 16px;
+        height: auto;
+    }
+}

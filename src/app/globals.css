@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Gellix_Light';
+  src: url('../../public/fonts/Gellix_Light/Gellix-Light.woff2') format('woff2'),
+    url('../../public/fonts/Gellix_Light/Gellix-Light.woff') format('woff');
+  /* Add additional src lines for other formats if necessary */
+}
+
+@font-face {
+  font-family: 'Gellix_Regular';
+  src: url('../../public/fonts/Gellix_Regular/Gellix-Regular.woff2') format('woff2'),
+    url('../../public/fonts/Gellix_Regular/Gellix-Regular.woff') format('woff');
+  /* Add additional src lines for other formats if necessary */
+}
+
+@font-face {
+  font-family: 'Gellix';
+  src: url('../../public/fonts/Gellix-SemiBold.woff2') format('woff2'),
+    url('../../public/fonts/Gellix-SemiBold.woff') format('woff');
+}
+
+
+.empty_header {
+  height: 20px;
+  background-color: blue;
+}
+
+.tags {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  gap: 15px;
+  margin-top: 15px;
+  margin-left: 15px;
+  z-index: 1;
+  font-family: "Gellix";
+}
+
+.tag {
+  box-sizing: border-box;
+  width: fit-content;
+  height: 36px;
+  background-color: #FFAA46;
+  border-radius: 25px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #F7F7F7;
+}
+
+.tags .tag:nth-child(2) {
+  background-color: #283241;
+}
+
+.image_caption {
+  font-size: 30px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+  padding: 0 15px;
+  text-align: center;
+  z-index: 1.2;
+}
+
+.splide__slide.is-visible p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.carousel-text-div p {
+  font-size: 20px;
+  opacity: 0.5;
+  transition: font-size 0.3s ease-in, opacity 0.3s ease-in;
+}
+
+.splide__slide.is-active p {
+  font-size: 36px;
+  opacity: 1;
+  transform: translateY(-25px);
+}
