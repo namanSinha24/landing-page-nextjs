@@ -3,7 +3,7 @@ import styles from "./contact.module.css";
 import { useState } from "react";
 import Link from "next/link";
 import Header from "../components/header";
-import Marque from "../components/prefooter";
+
 import Footer from "../components/footer";
 import { useFormik } from "formik";
 import * as yup from "yup";
@@ -29,20 +29,9 @@ const formValidationSchema = yup.object({
 });
 export default function Contact() {
   const foundersImg = [FounderImg1, FounderImg2];
-  const [isFormOpen, setIsFormOpen] = useState(false);
+
   const userCollectionRef = collection(db, "ClientData");
-  async function sendMessageToSlack(message) {
-    try {
-      const response = await axios({
-        method: "post",
-        url: "https://slack.com/api/chat.postMessage",
-        data: `text=${message}&channel=${process.env.NEXT_PUBLIC_CUSTOMER_FORM_CHANNEL_ID}&token=${process.env.NEXT_PUBLIC_SLACK_BOT_TOKEN}`,
-      });
-    } catch (error) {
-      // Handle errors
-      console.error("Error sending message to Slack:", error);
-    }
-  }
+
 
   const { handleSubmit, handleChange, handleBlur, touched, values, errors } =
     useFormik({
@@ -73,14 +62,8 @@ export default function Contact() {
       <Header />
       <div className={styles.contact_page_header_container}>
         <div className={styles.contact_page_header_top_container}>
-          <Image
-            src={ContactBackground}
-            alt="background"
-            className={styles.contact_page_image}
-            height={100}
-            width={100}
-          />
-          <h2 className={styles.contact_page_image_text}>Try ConsumableAI</h2>
+
+          <h2 className={styles.contact_page_image_text}>Try Boring Marketing</h2>
         </div>
 
         <div
@@ -102,7 +85,7 @@ export default function Contact() {
               </ul>
               <p className={styles.contact_page_email}>
                 <a href="f" className={styles.email_address_class}>
-                  contact@consumableai.com
+                  your@mail.com
                 </a>
                 <br />
                 <span className={styles.send_email_text}>Send us an email</span>
@@ -322,7 +305,7 @@ export default function Contact() {
                 </label>
               </div>
               <p className={styles.consent_text}>
-                By clicking submit below, you consent to allow ConsumableAI to
+                By clicking submit below, you consent to allow Boring Marketing to
                 store and process your personal information as outlined in our
                 Privacy Policy.
               </p>
@@ -335,7 +318,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <Marque />
+
       <Footer />
     </div>
   );

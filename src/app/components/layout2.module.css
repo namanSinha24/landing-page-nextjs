@@ -21,6 +21,7 @@
 
 .layout2_text {
     margin-bottom: 70px;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 .layout2_button {
@@ -37,6 +38,16 @@
 
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 
 .layout2_container {
     height: 700px;
@@ -47,6 +58,7 @@
     font-family: "Gellix";
     background-color: #007333;
     margin-top: 150px;
+
 }
 
 .bottom_div {
